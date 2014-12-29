@@ -22,7 +22,7 @@ function Links_output() {
         </h1><div class="links"><ul>';
 		for( $row=0; $row < count($links); $row++ ) {
 			echo '<li>';
-				echo '<a href='. $links[$row][1] .' title='.  $links[$row][2] .'  target="_blank">'. $links[$row][0] .'</a>';
+				echo '<a href="'. $links[$row][1] .'" title="'.  $links[$row][2] .'"  target="_blank">'. $links[$row][0] .'</a>';
 			echo '</li>';
 		}
 		echo '</ul></div>';
