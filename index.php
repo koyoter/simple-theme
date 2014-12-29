@@ -31,6 +31,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 	<?php endwhile; ?>
 
     <?php $this->pageNav('&laquo;', '&raquo;'); ?>
+	<?php $this->need('links.php'); ?>
 </div><!-- end #main-->
 
 <?php $this->need('footer.php'); ?>
