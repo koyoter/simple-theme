@@ -17,15 +17,20 @@
         ), '', ' - '); ?><?php $this->options->title(); ?></title>
 
     <!-- 使用url函数转换相关路径 -->
-    <link rel="stylesheet" href="http://cdn.staticfile.org/normalize/2.1.3/normalize.min.css">
+    <link rel="stylesheet" href="<?php $this->options->themeUrl('css/normalize.min.css'); ?>">
 	<link rel="stylesheet" href="<?php $this->options->themeUrl('css/style.css'); ?>">
+	<link rel="stylesheet" href="<?php $this->options->themeUrl('css/tomorrow.css'); ?>">
 
 	<script src="<?php $this->options->themeUrl('js/jquery-2.1.1.min.js'); ?>"type="text/javascript"></script>
 	<script src="<?php $this->options->themeUrl('js/nprogress.min.js'); ?>"type="text/javascript"></script>
 	<script src="<?php $this->options->themeUrl('js/skin.js'); ?>"type="text/javascript"></script>
 	<script src="<?php $this->options->themeUrl('js/jquery.githubRepoWidget.min.js'); ?>"type="text/javascript"></script>
 	<script src="<?php $this->options->themeUrl('js/instantclick.min.js'); ?>" data-no-instant></script>
-	<script data-no-instant>InstantClick.init();</script>
+	<script src="<?php $this->options->themeUrl('js/highlight.js'); ?>"></script>
+	<script data-no-instant>
+	ljs.initHighlightingOnLoad();
+	InstantClick.init();
+	</script>
     <!--[if lt IE 9]>
     <script src="http://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
     <script src="http://cdn.staticfile.org/respond.js/1.3.0/respond.min.js"></script>
