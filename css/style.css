@@ -204,7 +204,7 @@ div.x-goto-top div.x-stick{position:absolute;top:15px;left:15px;display:block;wi
 #header .description{margin-top:15px}
 #header .nav{margin:15px 0 10px 0;width:100%}
 #header .nav ul{padding:0;text-align:center}
-#header .nav li{display:inline-block;margin:0 10px 0 0}
+#header .nav li{display:inline-block;margin:0 10px 0 10px}
 #header .nav li a{color:#999;text-decoration:none;font-size:16px}
 #wrap{min-height:100%}
 #body{overflow:auto;padding-bottom:30px}
@@ -332,10 +332,13 @@ button,html input[type=button],input[type=reset],input[type=submit]{cursor:point
 #post .tags .dshareds{float:right}
 .links ul li{width:22.15%}
 }
+@media(max-width:610px){
+  #comments #author,#comments #mail,#comments #url{width:100%}
+}
 @media(min-width:684px){.links ul li{width:30%}
 }
 @media(max-width:992px){#index .post .post-title:hover,#archive .post .post-title:hover{padding-left:0}
-#comments input{margin-bottom:5px;min-width:40%}
+#comments input{margin-bottom:5px;min-width:32.5%}
 #index .post .cr{opacity:1}
 #header,.post-title,.post-meta{text-align:center}
 #post .post-near{display:block;overflow:auto;margin:15px 0;zoom:1}
